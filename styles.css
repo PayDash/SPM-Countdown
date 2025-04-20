@@ -1,0 +1,213 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Fake Browser Toolbar */
+.browser-toolbar {
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.toolbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.nav-btn {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.2s ease;
+}
+
+.nav-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.chrome-logo {
+  width: 20px;
+  height: 20px;
+}
+
+.address-bar-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-grow: 1;
+}
+
+.address-bar {
+  width: 100%;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  background-color: #f9f9f9;
+  color: #666;
+  outline: none;
+}
+
+.address-bar:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.browser-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.tab {
+  background-color: #e0e0e0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.tab.active {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Browser Content */
+.browser-content {
+  width: 90%;
+  max-width: 1200px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Silly Ad Banner */
+.ad-banner {
+  /* background-color: #ffeb3b; */ /* Removed yellow background */
+  padding: 5px; /* Reduced padding for a more compact look */
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Ensures no overflow */
+  width: 95%; /* Wider relative width for responsiveness */
+  max-width: 1200px; /* Maximum width for larger screens */
+  margin: 0 auto; /* Center the banner horizontally */
+  height: auto; /* Height adjusts based on content */
+}
+
+.ad-banner-image {
+  width: 100%; /* Image spans the full width of the container */
+  height: 180px; /* Explicitly set a smaller height */
+  object-fit: cover; /* Ensures the image fits properly without distortion */
+  border-radius: 10px; /* Match the border-radius of the container */
+  display: block; /* Removes any extra space below the image */
+}
+.ad-button {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.ad-button:hover {
+  background-color: #e64a19;
+}
+
+/* Countdown Timer */
+.countdown-container {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.countdown-container h1 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.time-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
+  width: 80px;
+}
+
+.time-section span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.time-section p {
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+/* Footer Ads */
+.footer-ads {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.ad {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 150px;
+}
+
+.ad img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.ad p {
+  font-size: 0.8rem;
+  margin-top: 5px;
+  color: #555;
+}
